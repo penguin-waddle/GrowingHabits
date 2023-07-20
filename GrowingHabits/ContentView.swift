@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+struct PlantRowView: View {
+    var plant: Plant
+    
+    var body: some View {
+        Text(plant.name ?? "Unknown")
+    }
+}
+
 struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     
@@ -27,23 +35,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(userPlants, id: \.self) { plant in
-                Text(plant.name ?? "Unknown") // replace with PlantRow view
+                NavigationLink(destination: PlantDetailView(plant: plant)) {
+                    PlantRowView(plant: plant)
+                }
             }
             .navigationBarTitle("My Plants")
             .navigationBarItems(trailing: Button(action: {
                 let newPlant = Plant(context: self.managedObjectContext)
-                newPlant.name = "New Plant"
-                newPlant.id = UUID()
-                // set the other properties...
-                newPlant.user = User(context: self.managedObjectContext) // this should be a User instance
-                do {
-                    try self.managedObjectContext.save()
-                } catch {
-                    print(error)
+                self.managedObjectContext.perform {
+                    self.managedObjectContext.insert(newPlant)
                 }
-            }) {
+            }, label: {
                 Image(systemName: "plus")
-            })
+            }))
         }
     }
 }
