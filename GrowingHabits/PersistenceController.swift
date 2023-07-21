@@ -4,7 +4,7 @@
 //
 //  Created by Vivien on 7/19/23.
 //
-
+import CoreData
 import Foundation
 
 class PersistenceController {

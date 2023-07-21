@@ -12,6 +12,7 @@
 		1E86D2142A675242007DBEBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D2132A675242007DBEBB /* ContentView.swift */; };
 		1E86D2162A675243007DBEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E86D2152A675243007DBEBB /* Assets.xcassets */; };
 		1E86D21A2A675243007DBEBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E86D2192A675243007DBEBB /* Preview Assets.xcassets */; };
+		1EA9A8F42A6B2A3500338A6E /* AddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9A8F32A6B2A3500338A6E /* AddPlantView.swift */; };
 		1EAA6B7B2A688D7C00F2A2CB /* GrowingHabitsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA6B792A688D7C00F2A2CB /* GrowingHabitsModel.xcdatamodeld */; };
 		1EAA6B8A2A689B4700F2A2CB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA6B862A689B4700F2A2CB /* User+CoreDataClass.swift */; };
 		1EAA6B8B2A689B4700F2A2CB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA6B872A689B4700F2A2CB /* User+CoreDataProperties.swift */; };
@@ -28,6 +29,7 @@
 		1E86D2152A675243007DBEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E86D2172A675243007DBEBB /* GrowingHabits.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrowingHabits.entitlements; sourceTree = "<group>"; };
 		1E86D2192A675243007DBEBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EA9A8F32A6B2A3500338A6E /* AddPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantView.swift; sourceTree = "<group>"; };
 		1EAA6B7A2A688D7C00F2A2CB /* GrowingHabitsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GrowingHabitsModel.xcdatamodel; sourceTree = "<group>"; };
 		1EAA6B862A689B4700F2A2CB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1EAA6B872A689B4700F2A2CB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				1EAA6B892A689B4700F2A2CB /* Plant+CoreDataProperties.swift */,
 				1E86D2112A675242007DBEBB /* GrowingHabitsApp.swift */,
 				1E86D2132A675242007DBEBB /* ContentView.swift */,
+				1EA9A8F32A6B2A3500338A6E /* AddPlantView.swift */,
 				1EAA6B8E2A68C9D300F2A2CB /* PlantDetailView.swift */,
 				1E5E0C982A68D4BD0093DD0D /* PersistenceController.swift */,
 				1EAA6B792A688D7C00F2A2CB /* GrowingHabitsModel.xcdatamodeld */,
@@ -164,6 +167,7 @@
 				1EAA6B7B2A688D7C00F2A2CB /* GrowingHabitsModel.xcdatamodeld in Sources */,
 				1EAA6B8C2A689B4700F2A2CB /* Plant+CoreDataClass.swift in Sources */,
 				1E86D2142A675242007DBEBB /* ContentView.swift in Sources */,
+				1EA9A8F42A6B2A3500338A6E /* AddPlantView.swift in Sources */,
 				1EAA6B8A2A689B4700F2A2CB /* User+CoreDataClass.swift in Sources */,
 				1EAA6B8B2A689B4700F2A2CB /* User+CoreDataProperties.swift in Sources */,
 				1EAA6B8F2A68C9D300F2A2CB /* PlantDetailView.swift in Sources */,

@@ -40,14 +40,9 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("My Plants")
-            .navigationBarItems(trailing: Button(action: {
-                let newPlant = Plant(context: self.managedObjectContext)
-                self.managedObjectContext.perform {
-                    self.managedObjectContext.insert(newPlant)
-                }
-            }, label: {
+            .navigationBarItems(trailing: NavigationLink(destination: AddPlantView()) {
                 Image(systemName: "plus")
-            }))
+            })
         }
     }
 }
